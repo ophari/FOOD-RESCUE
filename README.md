@@ -1,6 +1,6 @@
 # Dokumentasi Developer - SISA 1 (Food Rescue Platform)
 
-Dokumen ini ditujukan bagi programmer atau developer yang akan membaca, memelihara, atau melanjutkan pengembangan aplikasi **SISA 1**. Saat ini proyek baru menyelesaikan tahap **UI/UX (Frontend Only)** menggunakan *dummy data*. Sistem backend dan API integrasi belum dibuat.
+**SISA 1**. Saat ini proyek baru menyelesaikan tahap **UI/UX (Frontend Only)** menggunakan *dummy data*. Sistem backend dan API integrasi belum dibuat.
 
 ## 1. Arsitektur Proyek
 
