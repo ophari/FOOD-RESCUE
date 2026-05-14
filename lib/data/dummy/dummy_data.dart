@@ -1,4 +1,4 @@
-import '../models.dart';
+import 'package:flutter_application_1/data/models.dart';
 
 class DummyData {
   DummyData._();
@@ -14,16 +14,7 @@ class DummyData {
     'Lauk Pauk',
   ];
 
-  static final List<String> categoryIcons = [
-    '️',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-    '',
-  ];
+  static final List<String> categoryIcons = ['️', '', '', '', '', '', '', ''];
 
   static final List<FoodItem> foods = [
     FoodItem(
