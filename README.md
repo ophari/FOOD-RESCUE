@@ -8,8 +8,12 @@
 lib/
 ├── core/         # Konfigurasi utama aplikasi (Tema, Konstanta, Routing)
 ├── data/         # Model data dan dummy data
-├── screens/      # Halaman-halaman UI berdasarkan fitur
-├── widgets/      # Komponen UI modular (Reusable Widgets)
+├── desktop/      # Aplikasi khusus Desktop/Web
+│   └── admin/    # Modul Admin Dashboard (Manajemen pengguna, klaim, makanan)
+├── mobile/       # Aplikasi khusus Mobile
+│   ├── buyer/    # Modul Pembeli (Eksplorasi makanan, klaim)
+│   └── seller/   # Modul Penjual (Tambah makanan, manajemen klaim)
+├── shared/       # Komponen UI modular (Reusable Widgets) untuk lintas platform
 └── main.dart     # Entry point aplikasi
 ```
 
@@ -17,9 +21,10 @@ lib/
 - **`core/theme/`**: Menyimpan warna utama aplikasi (`app_colors.dart`) dan konfigurasi tema Material 3 (`app_theme.dart`). Jangan hardcode warna di dalam UI, gunakan file ini.
 - **`core/constants/`**: Tempat untuk konstanta global seperti path nama aset (gambar, ikon) dan string statis (`app_constants.dart`).
 - **`core/router/`**: Konfigurasi navigasi menggunakan `go_router` (`app_router.dart`). Semua perpindahan rute harus didaftarkan di sini.
-- **`data/`**: Struktur blueprint data (`models.dart`) seperti `FoodItem`, `ClaimItem`, `User`, beserta data statis sementara (`dummy/dummy_data.dart`).
-- **`screens/`**: Berisi halaman/layar utama aplikasi yang dikelompokkan dalam sub-folder (auth, home, explore, claim, profile, dll).
-- **`widgets/`**: Komponen independen yang sering dipakai berulang seperti `FoodCard`, text field khusus, dan kerangka bottom navigation bar (`main_scaffold.dart`).
+- **`data/`**: Struktur blueprint data (`models.dart`) seperti `FoodItem`, `ClaimItem`, `User`, beserta data statis sementara di folder `dummy/`.
+- **`desktop/`**: Berisi halaman/layar khusus untuk platform desktop dan web. Saat ini berisi antarmuka Admin untuk moderasi dan manajemen (*Dashboard, Food Moderation, User Management*).
+- **`mobile/`**: Berisi halaman/layar khusus untuk platform mobile. Terbagi menjadi dua modul utama: `buyer` (pembeli/user biasa) dan `seller` (penjual).
+- **`shared/widgets/`**: Komponen independen yang sering dipakai berulang di berbagai tempat (misal `FoodCard`, text field khusus, dsb).
 
 ---
 
